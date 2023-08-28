@@ -1,0 +1,37 @@
+*{
+    margin: 0px;
+}
+
+main{
+    display: grid;
+    grid-template-areas: "cab cab"
+    "cont ."
+    "pie pie";
+    grid-template-rows: 2fr 15fr 1fr;
+    width: 100vw;
+    height: 100vh;
+}
+
+header{
+    background-color: #dddddd;
+    border: 1px solid #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: cab;
+}
+
+.contenido{
+    padding: 10px;
+    display: grid;
+    grid-area: cont;
+}
+
+footer{
+    display: flex;
+    background-color: #dddddd;
+    border: 1px solid #000000;
+    justify-content: center;
+    align-items: center;
+    grid-area: pie;
+}
